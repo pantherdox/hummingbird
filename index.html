@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
     <title>Hummingbird</title>
 </head>
 
@@ -19,14 +20,14 @@
             <div class="nav-links" id="nav-links">
                 <ul class="nav-bar flex">
                     <li><a href="#" class="hover-links">Home</a></li>
-                    <li><a href="#" class="hover-links">Services</a></li>
-                    <li><a href="#" class="hover-links">Customers</a></li>
-                    <li><a href="#" class="hover-links">About</a></li>
+                    <li><a href="#services" class="hover-links">Services</a></li>
+                    <li><a href="#offer" class="hover-links">Our Work</a></li>
+                    <li><a href="#about" class="hover-links">About</a></li>
                     <li><a href="#" class="hover-links primary-btn">Get Started</a></li>
                 </ul>
-            <!-- </div>
+            </div>
             <a href="#" class="nav-toggle hover-links" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
-        </div> -->
+        </div>
     </nav>
 
     <header>
@@ -45,7 +46,7 @@
         </div>
     </header>
 
-    <div class="about container">
+    <div class="about container" id="about">
         <div class="aboutus">
             <h4>ABOUT US</h4>
             <h2>We help launch brands successfully</h2>
@@ -57,8 +58,8 @@
         </div>
     </div>
 
-    <section class="services">
-        <div class="services-section flex">
+    <section class="services" id="services">
+        <div class="services-section flex" >
             <div class="service">
                 <h4>OUR SERVICES</h4>
                 <h2>What we do</h2>
@@ -115,14 +116,14 @@
     </section>
 
     <section class="tasks">
-        <div class="task-section container flex">
+        <div class="task-section container flex" id="offer">
             <div class="ltask">
                 <img src="d.jpg" alt="">
             </div>
             <div class="rtask">
                 <p>WHAT WE OFFER</p>
                 <h2>Marketing <br> Strategies And <br> Advertising</h2>
-                <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <p>Adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua. Ut enim ad minim.</p>
                 <h3><i class="fa-solid fa-check"></i> Visitor Conversion Rate</h3>
                 <h3><i class="fa-solid fa-check"></i> Keyword Analysis</h3>
                 <h3><i class="fa-solid fa-check"></i> Web Site Optimization</h3>
@@ -199,6 +200,15 @@
 
 
     <script src="https://kit.fontawesome.com/edfde95286.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active')
+        })
+    </script>
 </body>
 
 </html>

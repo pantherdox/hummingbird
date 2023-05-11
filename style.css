@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -65,6 +66,11 @@ ul{
 .main-nav{
     padding: 20px;
     justify-content: space-evenly;
+    position: relative;
+}
+
+.nav-toggle{
+    display: none;
 }
 
 .company-logo img{
@@ -186,46 +192,6 @@ header{
     height: 48px;
 }
 
-.features-section{
-    margin-block: 80px;
-    padding: 80px 20px 0;
-    background-image: url(asset\ 34.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 40%;
-}
-
-.feature-header{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.feature-header h2{
-    margin-bottom: 15px;
-}
-
-.feature-area{
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 40px;
-    gap: 20px;
-    row-gap: 80px;
-}
-
-.feature-card{
-    flex-direction: column;
-    gap: 20px;
-    max-width: 30%;
-    text-align: center;
-}
-
-.feature-card img{
-    width: 50px;
-}
-
-.feature-desc{
-    color: #577592;
-}
 
 .services-section{
     margin-block: 40px;
