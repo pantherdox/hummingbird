@@ -47,7 +47,7 @@ ul {
 }
 
 .primary-btn:hover {
-    scale: 1.1;
+    transform: translateX(15px);
 }
 
 .secondary-btn {
@@ -103,6 +103,11 @@ nav {
 .hover-links:hover {
     color: #FF731D;
     scale: 1.1;
+}
+
+.hover-links:nth-child(5):hover {
+    color: #FF731D;
+    transform: translateX(10px);
 }
 
 header {
@@ -359,7 +364,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-h2 {
+form h2 {
     text-align: center;
     margin-bottom: 30px;
 }
@@ -395,9 +400,9 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 button:hover {
-    background-color: #3e8e41;
+    scale: 1.05;
 }
