@@ -201,6 +201,21 @@
         cursor: pointer;
     }
 
+    .service:hover {
+        background-color: #FF731D;
+        scale: 1;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 10px 10px 5px rgba(63, 62, 62, 0.486);
+    }
+
+    .service:nth-child(1):hover {
+        background-color: white;
+        color: black;
+        scale: 1;
+        box-shadow: 0 0 0 white;
+    }
+
     .con {
         text-align: center;
         flex-direction: column;
